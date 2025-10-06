@@ -571,6 +571,24 @@
             color: var(--secondary);
             font-size: 0.9rem;
         }
+        .profile-img {
+    width: 200px; /* Définissez une largeur et une hauteur fixe pour le conteneur */
+    height: 200px;
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    overflow: hidden; /* Cache tout ce qui dépasse du cercle */
+    display: flex; /* Utilise flexbox pour centrer l'image */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    /* Vous pouvez ajouter une bordure si vous voulez un effet d'anneau */
+    /* border: 3px solid #yourColor; */
+}
+
+.profile-img img {
+    width: 100%; /* L'image prend 100% de la largeur du conteneur */
+    height: 100%; /* L'image prend 100% de la hauteur du conteneur */
+    object-fit: cover; /* Recadre l'image pour qu'elle couvre tout le conteneur sans distorsion */
+    border-radius: 50%; /* Rend l'image elle-même circulaire si elle déborde */
+}
     </style>
 </head>
 <body>
@@ -1053,4 +1071,5 @@
         });
     </script>
 </body>
+
 </html>
